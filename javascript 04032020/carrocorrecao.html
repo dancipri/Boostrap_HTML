@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        try{
+        //metodo construtor
+        function Carro (_marca,_anoFabricação,_velMaxima,_velAtual){
+            //atributos
+            this.marca=_marca
+            this.anoFabricação=_anoFabricação
+            this.velMaxima=_velMaxima
+            this.velAtual=(0 || _velAtual)
+        }
+        //metodo acelerar
+        Carro.prototype.acelerar=function(){
+            if(this.velAtual<this.velMaxima){
+                this.velAtual++
+                alert("Velocidade atual: "+this.velAtual)
+            }
+            else{
+                alert("Velocidade Maxima")
+            }
+        }
+        //metodo desacelerar
+        Carro.prototype.desacelerar=function(){
+            if(this.velAtual<1)
+            {
+                alert("Parado")
+            }
+            else{
+                this.velAtual--
+                alert("Velocidade atual: "+this.velAtual)
+            }
+            
+        }
+        //utilizando a estrutura acima
+        // instanciar = criara uma copia do objeto
+        carro1= new Carro("Nissan","2017",20,"")
+            
+            carro1.acelerar()
+            carro1.acelerar()
+            carro1.acelerar()
+            carro1.acelerar()
+            carro1.acelerar()
+            carro1.acelerar()
+            carro1.acelerar()
+            carro1.acelerar()
+            carro1.acelerar()
+            carro1.acelerar()
+            carro1.acelerar()
+            carro1.acelerar()
+            carro1.acelerar()
+            carro1.acelerar()
+            carro1.acelerar()
+            carro1.acelerar()
+            carro1.acelerar()
+            carro1.acelerar()
+            carro1.acelerar()
+            carro1.acelerar()
+            carro1.desacelerar()
+            carro1.desacelerar()
+            carro1.desacelerar()
+            carro1.desacelerar()
+            carro1.desacelerar()
+            carro1.desacelerar()
+            carro1.desacelerar()
+            carro1.desacelerar()
+            carro1.desacelerar()
+            carro1.desacelerar()
+            carro1.desacelerar()
+            carro1.desacelerar()
+            carro1.desacelerar()
+            carro1.desacelerar()
+            carro1.desacelerar()
+            carro1.desacelerar()
+            carro1.desacelerar()
+            carro1.desacelerar()
+            carro1.desacelerar()
+            carro1.desacelerar()
+            
+
+            
+    }
+    catch(error)
+    {
+        alert("ERRO:"+error)
+        
+    }
+    </script>
+</body>
+</html>

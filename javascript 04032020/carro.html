@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        try {
+            function Carros(_marca, _ano, _max, _vel) {
+                this.marca = _marca
+                this.ano = _ano
+                this.velmax = _max
+                this.vel = _vel
+                 
+                var x=0
+
+            }
+            Carros.prototype.acelera = function () {
+                if (this.velmax > this.vel) {
+                   while ()
+                }
+                else {
+
+                    alert("Velicidade: Maxima")
+                }
+
+            }
+
+            Carros.prototype.desacelera = function () {
+                if (this.velmax < this.vel) {
+                    this.vel = this.vel - 1
+                    alert("Velocidade: - 1")
+                }
+                else {
+
+                    alert("Velicidade: 0")
+                }
+
+            }
+            carro1 = new Carros("Nissan GtR", "2017", 10, "")
+
+            carro1.acelera()
+            carro1.acelera()
+            carro1.acelera()
+            carro1.acelera()
+            carro1.acelera()
+            carro1.acelera()
+            carro1.acelera()
+            carro1.acelera()
+            carro1.acelera()
+            carro1.acelera()
+            carro1.acelera()
+            carro1.desacelera()
+            carro1.desacelera()
+            carro1.desacelera()
+            carro1.desacelera()
+            carro1.desacelera()
+            carro1.desacelera()
+            carro1.desacelera()
+            carro1.desacelera()
+            carro1.desacelera()
+            carro1.desacelera()
+            carro1.desacelera()
+
+            alert("Velocidade atual: " + carro1.vel)
+
+        }
+        catch (erro) {
+            alert("ERROR!: " + erro)
+        }
+    </script>
+</body>
+
+</html>

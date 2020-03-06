@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        try{
+        // CRIANDO NOSSO MODELO
+        //CRIA METOO CONTRUTOR
+        //MODELO= CONJUNTO DE ATRIBUTOS (CARACTERISTICA) E METODOS (AÇÕES)
+        //TODO MODELO CEMÇA COM LETRA MAIUSCULA
+
+        function MyPen(_color, _type, _size, _ink, _material, _point,_closed) {
+            this.color = _color
+            this.type = _type
+            this.size = -_size
+            this.ink =(_ink || "s")
+            this.material = _material
+            this.point = _point
+            this.close = (_closed || "sim")
+
+            //fim dos atributos
+        }
+        //fim do metodo construtor
+        MyPen.prototype.open= function(){
+            if (this.closed=="sim"){
+                this.closed="não"
+                alert ("destampada com sucesso!")
+            }
+            else{
+                alert ("ja estava aberta")
+            }
+
+        }
+        //Instanciar= copia do obj
+       
+        pen1 = new MyPen("azul", "hidrografica", "10cm","", "plastico", "2 mm","")
+        pen2 = new MyPen("vermelha", "esferografica", "15cm","", "plastico", "0.5 mm","n")
+
+        if (pen1.color==pen2.color){
+            alert("mesma cor")
+        }
+        else {
+            alert("cores diferente")
+        }
+        //imprimindo a cor
+        alert("color: " + pen1.color + "\nink: " + pen1.ink)
+
+
+        pen1.open()
+        pen1.close()
+    }
+    catch(erro){
+        alert("ERROR: "+erro)
+
+        
+    }
+
+    
+    
+</script>
+</body>
+
+</html>
